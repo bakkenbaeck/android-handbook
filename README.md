@@ -124,7 +124,7 @@ A block is more explicit and offers less chance for mistakes. A block is easier 
     // This is arguably better
     public String getName() { return name; }
 
-#### Prefer ?: operator over conditionals
+#### Prefer ?: operator over conditionals for assignment operations
 
     
     // Bad
