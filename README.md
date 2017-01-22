@@ -282,11 +282,11 @@ List fields in order from most-accessible to least accessible.
     protected BigDecimal bd;
     // package-private
     long l;
-    private final float f = "1.0f";
-    public final double d = "1.0d";
+    private final float f = 1.0f;
+    public final double d = 1.0d;
 
     // Good
-    public final double d = "1.0d";
+    public final double d = 1.0d;
     public int i;
 
     protected BigDecimal bd;
@@ -294,7 +294,7 @@ List fields in order from most-accessible to least accessible.
     // package-private
     long l;
 
-    private final float f = "1.0f";
+    private final float f = 1.0f;
     private String s;
 
 #### Limit visibility
