@@ -1,0 +1,8 @@
+This playbook was not written as a clean room implementation.
+
+Points of reference were taken from:
+
+Twitter (https://github.com/twitter/commons)
+Buffer (https://github.com/bufferapp/android-guidelines)
+An internal handbook at Telenor Digital
+And our own experiences.
