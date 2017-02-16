@@ -558,6 +558,41 @@ Methods that accept a boolean essentially do two things as as such should be two
     // Good
     public void enableView() { ... }
     public void disableView() { ... }
+    
+#### Layout/view setup
+
+    // Good
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:text="John Doe"/>
+	
+    // Bad
+    <TextView
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:id="@+id/label"
+        android:layout_gravity="right"
+        android:textColor="#000" />
+
+1. Id should always be first
+2. height/width
+3. Alignment(gravity/orientation)
+4. Styles(style/textColor/textSize/backgroundColor etc)
+5. Text should always be last
+
+#### String concatenation
+    // Bad
+    final String s = "Hello " + "world";
+
+    // Good
+    final String s = String.format(Locale.getDefault(), "%s %s", "Hello", "world");
 
 ## Exception handling
 
