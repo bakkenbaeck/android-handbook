@@ -172,14 +172,13 @@ It becomes clear that this is an assignment operation, takes less vertical space
         doSomethingElse();
     }
 
-#### Don't use brackets in a return statement
-
+#### Don't wrap return statements in parentheses
     
     // Bad
-    return (x > y);
+    return ((x + y) * z);
 
     // Good
-    return x > y;
+    return (x + y) * z;
 
 #### Use braces to assert order of operation
 
