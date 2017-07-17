@@ -1,6 +1,6 @@
 # Android Style Guide
 
-The intention of this guide is to provide a set of conventions that encourage good code that are specific to the Android environment.
+The intention of this guide is to provide a set of conventions that encourage good code that is specific to the Android environment.
 
 ## In General
 
@@ -19,7 +19,7 @@ Any classes extending an Android framework component should **always** end with 
 When naming resource files you should be sure to name them using lowercase letters and underscores instead of spaces, for example:
 
 	activity_main, fragment_user, item_post
-  
+
 #### View IDs
 
 When giving views IDs you should name them using camel case pattern. This is because it is now trivial to bind views in code.
@@ -86,7 +86,7 @@ When naming layout files, they should be named starting with the name of the And
         android:textSize="14sp"
         android:textColor="#000"
         android:text="John Doe"/>
-	
+
     // Bad
     <TextView
         android:textSize="14sp"
