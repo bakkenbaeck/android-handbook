@@ -39,7 +39,7 @@ They reduce boilerplate code and are easier to read and understand. They also al
 
 #### Drop the left part of the lambda expression when possible
 
-If a lambda has zero parameters, unused parameters our only a single parameter the left part of the lambda can be removed.
+If a lambda has zero parameters, unused parameters, or only a single parameter the left part of the lambda can be removed.
 
     // Bad
     { view -> toast("Click")}
